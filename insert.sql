@@ -5,6 +5,7 @@ insert into flights (origin_id, destination_id, duration) values (1, 7, 435);
 insert into flights (origin_id, destination_id, duration) values (5, 7, 245);
 insert into flights (origin_id, destination_id, duration) values (6, 1, 455);
 
+
 ----------------
 
 insert into locations (code, name) values ('JFK', 'New York');

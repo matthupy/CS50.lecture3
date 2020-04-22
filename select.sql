@@ -10,8 +10,7 @@ SELECT
     o.name as origin_name,
     d.code as dest_code,
     d.name as dest_name,
-    f.duration,
-    count(p.name) as passengers
+    f.duration
 FROM flights as f
     JOIN locations AS o
         on f.origin_id = o.id
@@ -27,6 +26,4 @@ GROUP BY
     d.name,
     f.duration
 ORDER BY 
-    count(*) desc,
-    o.code desc,
-    o.name desc;
+    f.id
